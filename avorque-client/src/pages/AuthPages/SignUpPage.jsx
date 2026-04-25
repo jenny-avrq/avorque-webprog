@@ -93,7 +93,7 @@ const SignUpPage = () => {
           <span>I agree to receive updates, announcements, and member access emails.</span>
         </label>
 
-        <Button type="submit" to="/" variant="primary" className="w-full">
+        <Button type="submit" to="/dashboard" variant="primary" className="w-full">
           Create Account
         </Button>
 
@@ -103,10 +103,10 @@ const SignUpPage = () => {
         </div>
 
         <div className="grid gap-3 sm:grid-cols-2">
-          <Button type="button" to="/" variant="secondary" className="w-full">
+          <Button type="button" to="/dashboard" variant="secondary" className="w-full">
             Google
           </Button>
-          <Button type="button" to="/" variant="secondary" className="w-full">
+          <Button type="button" to="/dashboard" variant="secondary" className="w-full">
             Apple
           </Button>
         </div>

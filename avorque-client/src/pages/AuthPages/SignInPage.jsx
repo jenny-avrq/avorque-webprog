@@ -65,7 +65,7 @@ const SignInPage = () => {
           </button>
         </div>
 
-        <Button type="submit" to="/" variant="primary" className="w-full">
+        <Button type="submit" to="/dashboard" variant="primary" className="w-full">
           Log In
         </Button>
 
@@ -75,10 +75,10 @@ const SignInPage = () => {
         </div>
 
         <div className="grid gap-3 sm:grid-cols-2">
-          <Button type="button" variant="secondary" className="w-full">
+          <Button type="button" to="/dashboard" variant="secondary" className="w-full">
             Google
           </Button>
-          <Button type="button" variant="secondary" className="w-full">
+          <Button type="button" to="/dashboard" variant="secondary" className="w-full">
             Apple
           </Button>
         </div>
