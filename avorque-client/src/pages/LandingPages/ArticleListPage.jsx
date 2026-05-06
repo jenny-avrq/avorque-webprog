@@ -1,5 +1,5 @@
 import ArticleList from '../../components/ArticleList.jsx';
-import articles from '../../assets/article-content.js';
+import articles from '../../data/article-content.js';
 
 const ArticleListPage = () => {
   

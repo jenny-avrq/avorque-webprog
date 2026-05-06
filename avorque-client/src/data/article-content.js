@@ -8,7 +8,7 @@ import {
   d2nme_sa_south_first_stop,
   anyo,
   new_baby,
-} from './images/gig';
+} from '../assets/images/gig';
 
 const articles = [
 	{

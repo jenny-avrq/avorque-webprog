@@ -36,7 +36,7 @@ const dashboardNavItems = [
     },
     {
         label: "Reports",
-        title: "Resports",
+        title: "Reports",
         to: "/dashboard/reports",
         icon: AssessmentIcon
     },
