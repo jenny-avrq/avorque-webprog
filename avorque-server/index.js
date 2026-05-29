@@ -1,4 +1,8 @@
 require("dotenv").config();
+
+console.log("MONGO_URI exists:", Boolean(process.env.MONGO_URI));
+console.log("JWT_SECRET exists:", Boolean(process.env.JWT_SECRET));
+
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
@@ -25,9 +29,9 @@ const corsOptions = {
     origin: "*", // Allow all origins
     credentials: true, // Allow all credentials
     allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
-    methods: ["GET", "HEAD", "PUT", "PATHC", "POST", "DELETE"],
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
     preflightContinue: false,
-    optionSuccessStatus: 204, // For legacy browser support 
+    optionsSuccessStatus: 204, // For legacy browser support 
 };
 
 app.options("", cors(corsOptions)); // Pre-flight request for all routes
@@ -65,6 +69,8 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+if (process.env.NODE_ENV !== "production") {
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
 
 module.exports = app;
