@@ -2,7 +2,7 @@ import Button from '../../components/Buttons.jsx';
 import Jammy from '../../assets/images/jammy.jpg';
 import Kahon from '../../assets/images/kahon.jpg';
 import Bendahe from '../../assets/images/bendahe.jpg';
-import Sikreto from '../../assets/images/Sikreto.jpg';
+import Sikreto from '../../assets/images/sikreto.jpg';
 import TayoAyBagay from '../../assets/images/tayo_ay_bagay.png';
 
 const MusicPage = () => {
